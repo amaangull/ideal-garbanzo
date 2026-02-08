@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Pin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .pin-container {
+            width: 600px;
+            height: 900px;
+            background: linear-gradient(135deg, #ff6b9d 0%, #c94b7a 100%);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .header {
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            color: #c94b7a;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        .hearts-decoration {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+        }
+        
+        .products-section {
+            padding: 30px;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        
+        .product-name {
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .product-price {
+            color: #c94b7a;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .cta-section {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button {
+            background: #ff6b9d;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(255,107,157,0.4);
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #c94b7a;
+            transform: scale(1.05);
+        }
+        
+        .badge {
+            background: #ffd700;
+            color: #333;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .decorative-hearts {
+            position: absolute;
+            font-size: 40px;
+            opacity: 0.3;
+        }
+        
+        .heart1 { top: 250px; left: 20px; }
+        .heart2 { top: 450px; right: 30px; }
+        .heart3 { bottom: 150px; left: 40px; }
+    </style>
+</head>
+<body>
+    <div class="pin-container">
+        <div class="header">
+            <div class="hearts-decoration">💕</div>
+            <h1>Valentine's Day</h1>
+            <p>Best Gifts for Him Under $50</p>
+        </div>
+        
+        <div class="decorative-hearts heart1">❤️</div>
+        <div class="decorative-hearts heart2">💖</div>
+        <div class="decorative-hearts heart3">💝</div>
+        
+        <div class="products-section">
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">⌚</div>
+                    <div class="product-name">Stylish Watch</div>
+                    <div class="product-price">$39.99</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-icon">👔</div>
+                    <div class="product-name">Leather Wallet</div>
+                    <div class="product-price">$24.99</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-icon">🎧</div>
+                    <div class="product-name">Wireless Earbuds</div>
+                    <div class="product-price">$45.99</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-icon">🕶️</div>
+                    <div class="product-name">Sunglasses Set</div>
+                    <div class="product-price">$29.99</div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="badge">⚡ PRIME DELIVERY</div>
+                <h2 style="color: #333; margin-bottom: 15px; font-size: 22px;">Shop All Gift Ideas</h2>
+                <a href="https://www.amazon.com/s?k=valentine+gifts+for+him&tag=amaangull-20" target="_blank" class="cta-button">VIEW ON AMAZON →</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            💝 Affiliate Link - I may earn a small commission<br>
+            Perfect gifts to make him smile this Valentine's!
+        </div>
+    </div>
+</body>
+</html>
